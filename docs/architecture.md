@@ -45,13 +45,15 @@ PC-HQ-04	End Device	User endpoint
 
 
 4. Physical Connectivity
-Device A	Interface	Device B	Interface	Link Type
-SRX-HQ-01	TBD	L3-SW-HQ-01	TBD	TBD
-L3-SW-HQ-01	TBD	L2-SW-HQ-01	TBD	Trunk
-L3-SW-HQ-01	TBD	PC-HQ-01	TBD	Access
-L3-SW-HQ-01	TBD	PC-HQ-02	TBD	Access
-L2-SW-HQ-01	TBD	PC-HQ-03	TBD	Access
-L2-SW-HQ-01	TBD	PC-HQ-04	TBD	Access
+
+| Device A | Interface | Device B | Interface | Link Type | VLANs |
+|---|---|---|---|---|---|
+| SRX-HQ-01 | ge-0/0/0 | L3-SW-HQ-01 | Ethernet 0/0 | Routed | N/A |
+| L3-SW-HQ-01 | Ethernet 0/3 | PC-HQ-01 | Ethernet 0/0 | Access | VLAN 30 |
+| L3-SW-HQ-01 | Ethernet 0/2 | PC-HQ-02 | Ethernet 0/0 | Access | VLAN 10 |
+| L3-SW-HQ-01 | Ethernet 0/1 | L2-SW-HQ-01 | Ethernet 0/0 | Trunk | VLANs 10, 20 |
+| L2-SW-HQ-01 | Ethernet 0/2 | PC-HQ-03 | Ethernet 0/0 | Access | VLAN 10 |
+| L2-SW-HQ-01 | Ethernet 0/3 | PC-HQ-04 | Ethernet 0/0 | Access | VLAN 20 |
 
 
 5. Network Responsibilities
