@@ -17,33 +17,7 @@ The HQ site consists of:
 * One Layer 2 switch
 * Four end devices
 
-### Logical Topology
 
-```text
-                         ┌─────────────────┐
-                         │    HQ-SRX       │
-                         │                 │
-                         │ ge-0/0/0        │
-                         │ 10.10.10.1/30   │
-                         └────────┬────────┘
-                                  │
-                                  │ 10.10.10.0/30
-                                  │
-                         ┌────────▼────────┐
-                         │   L3-SW-HQ      │
-                         │                 │
-                         │ Et0/0           │
-                         │ 10.10.10.2/30   │
-                         └───────┬─────────┘
-                                 │
-                              Trunk
-                                 │
-                         ┌───────▼─────────┐
-                         │    L2-SW-HQ     │
-                         │                 │
-                         └──┬────┬─────────┘
-                            │    │
-                           PC3  PC4
 ```
 
 The Layer 3 switch also provides the VLAN gateways and performs inter-VLAN routing.
