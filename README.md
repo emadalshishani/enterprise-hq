@@ -8,6 +8,8 @@ The project focuses on practical configuration, verification, troubleshooting, a
 
 ## 1. Topology
 
+![Enterprise HQ Network Topology](docs/images/Enterprise-HQ-Topology.svg)
+
 The HQ site consists of:
 
 * Juniper SRX firewall
